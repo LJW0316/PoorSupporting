@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+  <view class="box">
+    <view class="title">登录</view>
+    <form bindsubmit="formSubmit">
+      <view class="lineLayout">
+        <view>用户名：</view>
+        <input placeholder="请输入用户名" name="account" value="{{account}}"
+          placeholder-class="inputPlaceholder"></input>
+      </view>
+      <view class="lineLayout">
+        <view>密码：</view>
+        <input password="true" placeholder="请输入密码" name="password" value="{{password}}"
+          placeholder-class="inputPlaceholder"></input>
+      </view>
+      <button form-type="submit" type="primary" style="margin-top:30px;">登 录</button>
+    </form>
+    <view class="textBox">
+      <view bindtap="signUp" style="float:left;">注册</view>
+      <view bindtap="forget" style="float:right">忘记密码</view>
+    </view>
+  </view>
+</view>
